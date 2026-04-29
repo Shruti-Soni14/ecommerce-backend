@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin(origins = "*")
 public class OrderController {
 
+     @GetMapping
+    public String test() {
+        return "Orders API working";
+    }
+
     // CHECKOUT (dummy)
     @PostMapping("/checkout/{userId}")
     public String checkout(@PathVariable Long userId) {
