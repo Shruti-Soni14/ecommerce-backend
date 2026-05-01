@@ -40,7 +40,7 @@ public class AuthController {
     @PostMapping("/login")
     public User login(@RequestBody User user) {
 
-        // 🔥 Demo login (no DB)
+        //  Demo login (no DB)
         User loggedInUser = new User();
 
         loggedInUser.setId(1L);
